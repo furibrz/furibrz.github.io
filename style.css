@@ -1,0 +1,143 @@
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Impact", sans-serif;
+    color:"#fff";
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  padding: 2rem;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: normal; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  font-stretch: condensed;
+  margin: 0;
+  text-align: left;
+  transform-origin: left;
+  transform: scaleX(0.53);
+}
+
+.title {
+  font-size: 2em;
+  color: #fff;
+  font-stretch: condensed;
+  margin: 0;
+  text-align: left;
+  transform-origin: left;
+  transform: scaleX(4.5);
+}
+
+.text {
+  font-family: "Helvetica", sans-serif;
+  color: #fff;
+  font-size: 0.8em;
+  margin: 0;
+  text-align: left;
+  transform-origin: left;
+}
+
+section {
+  margin: 1rem;
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 1rem;
+}
+
+.project {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.project-content {
+  padding: 0.3rem;
+  text-align: left;
+}
+
+.project img,
+.project video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    transform: scaleX(0.8);
+  }
+
+  .title {
+    font-size: 1.5em;
+    transform: scaleX(2.5);
+  }
+
+  .text {
+    font-size: 0.8em;
+      color: #fff;
+  }
+
+  h2 {
+    font-size: 1.5em;
+        color: #fff;
+  }
+
+  h3 {
+    font-size: 0.8em;
+        color: #fff;
+  }
+
+  #projects {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .project {
+    overflow: hidden;
+  }
+}

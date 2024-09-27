@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTTOMLESS TEXT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SZYMON FURI BRZOZOWSKI</h1>
+        <p class="title">BOTTOM-<br>LESS<br>TEXT</p>
+    </header>
+
+    <section id="projects">
+
+        <div class="project">
+            <div class="project-content">
+                <img src="bt/1.jpg" border="0">
+                <p class="text"><i><br>Are Memes Art?
+                        <br>
+                        How does technology take part in generating Memes?
+                        <br>
+                        How do we undermine the control that capitalist constructs like social media have over our lives?
+                        <br>
+                        How has sharing data on the Internet impacted the value of the image?
+                        <br>
+                        Can Memes save us?</i></p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-content">
+                <img src="bt/2.jpg" border="0">
+                <p class="text"><br>This project involves generating text and modifying art from a previous source, questioning the constraints of digital ownership to provide commentary on the issues of intellectual property and the democratic, iterary process of reproducing memes within the restrictive structures of social media. Replicating data is possible at a touch of the screen, in the blink of an eye, and images have advanced to the most prominent stratum of the Internet.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-content">
+                <img src="bt/3.jpg" border="0">
+                <p class="text"><br>Having grown sick of tactics employed by the dominant hegemonies I am actively and intentionally implementing a ‘dumb’ approach to my system design. Devoid of capitalist competency, I aim to subvert the artificially happy aesthetic to illustrate murky cracks forming in the polished facade of content produced by Influencers and their focus group study-curated media groups. Compiling a straightforward logic with a process that allows for unforeseen, partly randomized results through a somewhat bare UI offers itself to coupling, modification, and reappropriation for future use. Complex, detailed works lose their panache and depth in the two-dimensional planes of LED displays. The artefacts that corrupt non-vector-based assets spread through various communication channels of the digital realm, private or public, build up like residue, a sombre reminder of entropy, inescapable even in the nested world created on the Internet. A phenomenon declared <i>deep frying</i> stands witness to the iterative flux and flourish of the processed image.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-content">
+                <img src="bt/4.jpg" border="0">
+                <p class="text"><br>The project was created using C++ and the openFrameworks library.
+                    <br>
+                    Coded in C, the MT19937 has been ported to the random C++ library. I decided to choose this method of generating random numbers over rand() or other engines as it is designed to run over extended periods of time due to its non-repeating sequence and spectral characteristics, indicating hard-to-predict results.Constructing the random number generator was the most challenging stage of the project. It is crucial that the generator performs the intended function correctly as it is called throughout the run of the app so that each of the elements is different to particular tastes. Throughout the process, from constructing functions within the project at first I had initialised different iterations of the engine for each of the random number types I required. That was an unoptimised placeholder solution that worked, although with many issues. In the end I managed to run the same engine with different seeds, each of them chosen randomly. I could describe it as a 'babushka' of a random number generetor engine.
+                    <br>
+                    The wrapped(int num) function loads textfile and reads it line per line. Rng class is called to pass a vector, which then is used to shuffle through its range, returning a vector of randomised lines. In order to split the verses of text stored as vectors of strings, a 2-dimensional vector is applied to store lines as vectors of single words, and tokenized with the use of ofSplitString(). In order to be drawn, it is split into lines depending on the width of a particular string. Function returns random results by shuffling lines, shuffling individual words, and shuffling the vector which the words will iterate over.
+                    <br>
+                    The images are processed using the ofTexture and ofPixels functions of the ofx library, intentionally causing <i>value overflow</i> to create a more fried look.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-content">
+                <img src="bt/5.jpg" border="0">
+                <p class="text">
+                    <br>
+                    Initial feelings of confusion subside as new patterns of speech emerge, and the viewer notices the bot activity. The broken English that the human mind tries to find patterns in has charm reminiscent of a badly translated t-shirt design, or alternativelty, the bot, because it is fed a particular text dataset, seems to be gaining self-awareness.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <p class="text">Multidisciplinary Artist with a degree in Digital Arts Computing from Goldsmiths University of London.</p>
+        <h1>SBRZOZOWSKI216@GMAIL.COM</h1>
+    </section>
+
+</body>
+
+</html>
