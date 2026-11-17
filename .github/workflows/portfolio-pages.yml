@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - portfolio-pages.zip
+      - 'wizki/**'
       - .github/workflows/portfolio-pages.yml
   workflow_dispatch:
 
@@ -29,7 +30,9 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Prepare portfolio
-        run: unzip -q portfolio-pages.zip -d _site
+        run: |
+          unzip -q portfolio-pages.zip -d _site
+          cp -R wizki _site/wizki
       - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
